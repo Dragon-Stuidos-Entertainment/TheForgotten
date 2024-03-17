@@ -3,15 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PushableObject
+  - canPickUp
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - holdLayer
   - Water
   - UI
-  - 
+  - Enviorment
   - 
   - 
   - 
