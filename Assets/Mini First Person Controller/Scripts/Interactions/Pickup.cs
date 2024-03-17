@@ -7,7 +7,10 @@ public class PickUp : MonoBehaviour
     public GameObject player;
     public Transform holdPos;
     //if you copy from below this point, you are legally required to like the video
-    public float throwForce = 5000f; //force at which the object is thrown at
+    [SerializeField]float throwForce = 350f; //force at which the object is thrown at
+    [SerializeField] float throwVelocity = 5f;
+    [SerializeField] float throwSpeed = 18f;
+    [SerializeField] float throwRange = 10f;
     public float pickUpRange = 5f; //how far the player can pickup the object from
     private float rotationSensitivity = 1f; //how fast/slow the object is rotated in relation to mouse movement
     private GameObject heldObj; //object which we pick up
@@ -122,7 +125,7 @@ public class PickUp : MonoBehaviour
         heldObj.layer = 0;
         heldObjRb.isKinematic = false;
         heldObj.transform.parent = null;
-        heldObjRb.AddForce(transform.forward * throwForce);
+        heldObjRb.AddForce(transform.forward * throwForce * throwVelocity * throwSpeed * throwRange * Time.deltaTime);
         heldObj = null;
     }
     void StopClipping() //function only called when dropping/throwing
