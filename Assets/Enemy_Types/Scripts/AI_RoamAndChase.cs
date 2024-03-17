@@ -1,12 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
 public class AI_RoamAndChase : MonoBehaviour
 {
     public Transform[] patrolPoints;
-    public GameObject player; // Change to GameObject type
+    public GameObject player;
     public float detectionAngle = 45f;
     public float detectionRange = 10f;
     private NavMeshAgent agent;
@@ -34,7 +31,12 @@ public class AI_RoamAndChase : MonoBehaviour
             {
                 agent.SetDestination(player.transform.position);
             }
-            // Add additional logic for attacking or other behaviors when chasing the player
+            
+            if (agent.remainingDistance < 1f)
+            {
+                StopChasingPlayer();
+                attackPlayer();
+            }
         }
         else
         {
@@ -68,12 +70,12 @@ public class AI_RoamAndChase : MonoBehaviour
             {
                 if (hit.transform == player.transform)
                 {
-                    return true; // Player is within sight
+                    return true;
                 }
             }
         }
 
-        return false; // Player is not within sight
+        return false;
     }
 
     public void StartChasingPlayer()
@@ -85,5 +87,10 @@ public class AI_RoamAndChase : MonoBehaviour
     {
         isChasing = false;
         SetDestinationToNextPatrolPoint();
+    }
+
+    void attackPlayer()
+    {
+        Destroy(player);
     }
 }
