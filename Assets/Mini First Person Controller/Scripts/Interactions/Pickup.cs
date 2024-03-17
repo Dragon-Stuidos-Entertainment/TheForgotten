@@ -7,9 +7,9 @@ public class PickUp : MonoBehaviour
     public GameObject player;
     public Transform holdPos;
     //if you copy from below this point, you are legally required to like the video
-    [SerializeField]float throwForce = 350f; //force at which the object is thrown at
-    [SerializeField] float throwVelocity = 5f;
-    [SerializeField] float throwSpeed = 18f;
+    [SerializeField]float throwForce = 320f; //force at which the object is thrown at
+    [SerializeField] float throwVelocity = 4f;
+    [SerializeField] float throwSpeed = 12f;
     [SerializeField] float throwRange = 10f;
     public float pickUpRange = 5f; //how far the player can pickup the object from
     private float rotationSensitivity = 1f; //how fast/slow the object is rotated in relation to mouse movement
