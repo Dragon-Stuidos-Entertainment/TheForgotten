@@ -7,7 +7,7 @@ public class PickUp : MonoBehaviour
     public GameObject player;
     public Transform holdPos;
     //if you copy from below this point, you are legally required to like the video
-    [SerializeField]float throwForce = 315f; //force at which the object is thrown at
+    [SerializeField]float throwForce = 320f; //force at which the object is thrown at
     [SerializeField] float throwVelocity = 4f;
     [SerializeField] float throwSpeed = 12f;
     [SerializeField] float throwRange = 10f;
