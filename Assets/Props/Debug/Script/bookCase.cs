@@ -8,6 +8,7 @@ public class bookCase: MonoBehaviour
     [SerializeField] float gravity = 4f;
     [SerializeField] float mass = 4.5f;
     [SerializeField] float drag = 1f;
+    
     private Rigidbody rb;
 
     // Start is called before the first frame update
@@ -26,6 +27,7 @@ public class bookCase: MonoBehaviour
             rb.AddForce(Vector3.down * gravity, ForceMode.Acceleration);
             rb.AddForce(Vector3.back * drag, ForceMode.Acceleration);
             rb.AddForce(Vector3.down * mass, ForceMode.Acceleration);
+           
             // Add your code here to affect the object when thrown
         }
     }
