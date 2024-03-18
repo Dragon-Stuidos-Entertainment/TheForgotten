@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="" />
+    <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Props/Projectiles/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Props/Projectiles/Scripts/damage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Props/Projectiles/Scripts/damage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Alien 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy_Types/Alien 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_RoamAndChase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_RoamAndChase.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Enemy_Types/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/228a75ed9d5b4a658c89f48527e7e2e0175400/33/be15e70c/Component.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Props/Barrel/Scripts/barrelWeight.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -98,7 +105,7 @@
       <updated>1710598779175</updated>
       <workItem from="1710598782019" duration="2334000" />
       <workItem from="1710635104923" duration="12550000" />
-      <workItem from="1710712590480" duration="12272000" />
+      <workItem from="1710712590480" duration="16676000" />
     </task>
     <servers />
   </component>

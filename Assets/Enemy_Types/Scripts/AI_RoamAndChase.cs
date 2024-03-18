@@ -1,18 +1,30 @@
 using UnityEngine;
 using UnityEngine.AI;
+
 public class AI_RoamAndChase : MonoBehaviour
 {
     public Transform[] patrolPoints;
     public GameObject player;
     public float detectionAngle = 45f;
     public float detectionRange = 10f;
+    public GameObject enemyProjectilePrefab;
+    public float throwForce = 10f;
+    public float attackRange = 100f;
+    public float throwDelay = 2f;
+    public Transform spawnPosition; // New field for the spawn position
+
     private NavMeshAgent agent;
     private bool isChasing = false;
     private int currentPatrolIndex = 0;
+    private enemyAttack enemyAttackScript;
+    private bool canAttackPlayer = false;
+    private float lastThrowTime = 0f;
 
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        enemyAttackScript = GetComponent<enemyAttack>();
+        enemyAttackScript.SetSpawnPosition(spawnPosition); // Set the spawn position in the enemyAttack script
         if (patrolPoints.Length > 0)
         {
             SetDestinationToNextPatrolPoint();
@@ -24,6 +36,11 @@ public class AI_RoamAndChase : MonoBehaviour
         if (CanSeePlayer())
         {
             StartChasingPlayer();
+            if (Vector3.Distance(transform.position, player.transform.position) <= attackRange && Time.time - lastThrowTime > throwDelay && canAttackPlayer)
+            {
+                enemyAttackScript.AttackPlayer();
+                lastThrowTime = Time.time;
+            }
         }
         else if (isChasing)
         {
@@ -31,11 +48,19 @@ public class AI_RoamAndChase : MonoBehaviour
             {
                 agent.SetDestination(player.transform.position);
             }
-            
+
+            if (Vector3.Distance(transform.position, player.transform.position) <= attackRange)
+            {
+                canAttackPlayer = true;
+            }
+            else
+            {
+                canAttackPlayer = false;
+            }
+
             if (agent.remainingDistance < 1f)
             {
                 StopChasingPlayer();
-                attackPlayer();
             }
         }
         else
@@ -87,10 +112,6 @@ public class AI_RoamAndChase : MonoBehaviour
     {
         isChasing = false;
         SetDestinationToNextPatrolPoint();
-    }
-
-    void attackPlayer()
-    {
-        Destroy(player);
+        canAttackPlayer = false;
     }
 }

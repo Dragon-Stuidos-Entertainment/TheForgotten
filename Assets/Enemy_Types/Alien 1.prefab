@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: 0, y: -2.41, z: 13.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 6709118171340394579}
   m_Father: {fileID: 1722199847738703048}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1391564136770122652
@@ -103,6 +104,11 @@ MonoBehaviour:
   player: {fileID: 0}
   detectionAngle: 45
   detectionRange: 10
+  enemyProjectilePrefab: {fileID: 0}
+  throwForce: 10
+  attackRange: 5
+  throwDelay: 2
+  spawnPosition: {fileID: 0}
 --- !u!114 &2950497514729998753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,3 +241,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bounceForce: 10
+--- !u!1 &8665004670122114398
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6709118171340394579}
+  m_Layer: 7
+  m_Name: spawnPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6709118171340394579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8665004670122114398}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.6300001, z: -1.3170004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1323858322584075937}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
