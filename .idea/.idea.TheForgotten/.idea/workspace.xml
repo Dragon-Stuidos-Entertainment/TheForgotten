@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Props/Projectiles/Scripts/damage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Props/Projectiles/Scripts/damage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Props/Projectiles/projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Props/Projectiles/projectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mini First Person Controller/Materials/F_Mat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mini First Person Controller/Materials/F_Mat.mat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/228a75ed9d5b4a658c89f48527e7e2e0175400/33/be15e70c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Health/HealthUI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Health/P_Health.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Props/Barrel/Scripts/barrelWeight.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -34,6 +35,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "Enemy-AI",
@@ -81,10 +83,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="25452">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="25452" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -102,7 +104,7 @@
       <updated>1710598779175</updated>
       <workItem from="1710598782019" duration="2334000" />
       <workItem from="1710635104923" duration="12550000" />
-      <workItem from="1710712590480" duration="18780000" />
+      <workItem from="1710712590480" duration="21321000" />
     </task>
     <servers />
   </component>
