@@ -213,7 +213,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2.5, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &55833756
@@ -348,6 +348,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5485585490705212548, guid: eee1254e1a387a04f9a0c44c1548d85a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 6709118171340394579, guid: eee1254e1a387a04f9a0c44c1548d85a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,6 +367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Alien 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117201228828396790, guid: eee1254e1a387a04f9a0c44c1548d85a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 8217927597614689170, guid: eee1254e1a387a04f9a0c44c1548d85a,
         type: 3}
@@ -1812,6 +1822,37 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8108563764783910780, guid: 9e6ab3513a199bc42b5b540c0de4e664, type: 3}
+--- !u!1 &1208767063
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208767064}
+  m_Layer: 0
+  m_Name: attackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208767064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208767063}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.03, y: 1.21, z: 2.14}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4207293489525321}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1243005178
 GameObject:
   m_ObjectHideFlags: 0
@@ -2364,7 +2405,7 @@ GameObject:
   - component: {fileID: 1870205742}
   - component: {fileID: 1870205741}
   m_Layer: 5
-  m_Name: Health
+  m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2775,6 +2816,7 @@ GameObject:
   - component: {fileID: 114497868151573893}
   - component: {fileID: 114762042302517679}
   - component: {fileID: 136877097109809140}
+  - component: {fileID: 136877097109809141}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Player
@@ -2799,6 +2841,7 @@ Transform:
   - {fileID: 4464631217917187}
   - {fileID: 4773208593220485}
   - {fileID: 624760063}
+  - {fileID: 1208767064}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -0.086, z: 0}
 --- !u!4 &4464631217917187
@@ -3122,6 +3165,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+--- !u!114 &136877097109809141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1773623180863969}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3003b39215dc39142901f4aacb11b395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerProjectile: {fileID: 7409393878196038622, guid: 88fb482da21d7014ba15b76aa82815f7,
+    type: 3}
+  attackPoint: {fileID: 1208767064}
+  objectSpeed: 10
+  objectDamage: 10
+  throwForce: 15
+  lifeSpan: 2
+  attackRate: 2
 --- !u!4 &181155214179275276
 Transform:
   m_ObjectHideFlags: 0

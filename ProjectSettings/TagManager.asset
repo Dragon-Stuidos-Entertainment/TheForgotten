@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PushableObject
   - canPickUp
+  - Enemy
   layers:
   - Default
   - TransparentFX
