@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TheForgotten/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_RoamAndChase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_RoamAndChase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Alien.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Alien.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_MAT.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy_Types/Scripts/AI_MAT.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/DynamicsManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy_Types/Scripts/EnemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Props/Barrel/Scripts/barrelWeight.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProblemsViewState">
@@ -41,7 +47,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -100,7 +106,7 @@
       <updated>1710598779175</updated>
       <workItem from="1710598782019" duration="2334000" />
       <workItem from="1710635104923" duration="12550000" />
-      <workItem from="1710712590480" duration="4663000" />
+      <workItem from="1710712590480" duration="12186000" />
     </task>
     <servers />
   </component>
