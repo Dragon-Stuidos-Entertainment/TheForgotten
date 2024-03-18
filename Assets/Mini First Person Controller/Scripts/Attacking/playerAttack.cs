@@ -7,7 +7,6 @@ public class playerAttack : MonoBehaviour
     [SerializeField] private GameObject playerProjectile;
     [SerializeField] private Transform attackPoint;
     [SerializeField] private float objectSpeed = 10f;
-    [SerializeField] private float objectDamage = 10f;
     [SerializeField] private float throwForce = 15f;
     [SerializeField] private float lifeSpan = 2f;
 
