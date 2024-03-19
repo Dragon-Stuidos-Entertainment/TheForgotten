@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Attacking/projectileDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mini First Person Controller/Scripts/Attacking/projectileDamage.cs" afterDir="false" />
-    </list>
+    <list default="true" id="2bdea2ca-b930-4d1b-a042-f9ff02c74dc3" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +102,7 @@
       <workItem from="1710598782019" duration="2334000" />
       <workItem from="1710635104923" duration="12550000" />
       <workItem from="1710712590480" duration="22694000" />
-      <workItem from="1710769108131" duration="8954000" />
+      <workItem from="1710769108131" duration="9778000" />
     </task>
     <servers />
   </component>
