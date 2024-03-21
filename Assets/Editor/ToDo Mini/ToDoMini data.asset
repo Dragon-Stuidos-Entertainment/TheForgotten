@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a606916b18b974bb94d44eb8800f1c, type: 3}
   m_Name: ToDoMini data
   m_EditorClassIdentifier: 
-  displayDensity: 0
+  displayDensity: 1
   keepCompletedTasks: 1
   showCompletedTasks: 0
   items:
